@@ -25,7 +25,7 @@ data validation, insert, update, delete, and select; combines these
 with PEAR HTML_QuickForm to automatically generate input forms that
 match the table column definitions.
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Klasa zbudowana na PEAR DB do wyabstrahowania typów danych i
