@@ -1,18 +1,18 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		DB
 %define		_subclass	Table
-%define		_status		alpha
+%define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - automate table creation
 Summary(pl):	%{_pearname} - automatyzacja tworzenia tabel
 Name:		php-pear-%{_pearname}
-Version:	0.23.0
+Version:	1.0.0
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	9e79a74809643d4dce0288cb4acbdff5
+# Source0-md5:	2086312baac5f7bfbf826af4fb795283
 URL:		http://pear.php.net/package/DB_Table/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
