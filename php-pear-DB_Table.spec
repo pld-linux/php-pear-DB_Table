@@ -27,10 +27,14 @@ match the table column definitions.
 
 This class has in PEAR status: %{_status}.
 
-#%description -l pl
-#...
-#
-#Ta klasa ma w PEAR status: %{_status}.
+%description -l pl
+Klasa zbudowana na PEAR DB do wyabstrahowania typów danych i
+zautomatyzowania tworzenia tabel, sprawdzania poprawno¶ci danych,
+wstawiania, modyfikowania, usuwania i wybierania rekordów; ³±czy je
+z PEAR HTML_QuickForm w celu automatycznego generowania formularzy
+wej¶ciowych pasuj±cych do definicji kolumn tabel.
+
+Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %setup -q -c
