@@ -46,6 +46,7 @@ Summary:	Tests for PEAR::%{_pearname}
 Summary(pl):	Testy dla PEAR::%{_pearname}
 Group:		Development
 Requires:	%{name} = %{version}-%{release}
+AutoReq:	no
 
 %description tests
 Tests for PEAR::%{_pearname}.
