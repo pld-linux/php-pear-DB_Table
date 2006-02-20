@@ -44,7 +44,7 @@ Ta klasa ma w PEAR status: %{_status}.
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
 Summary(pl):	Testy dla PEAR::%{_pearname}
-Group:		Development
+Group:		Development/Languages/PHP
 Requires:	%{name} = %{version}-%{release}
 AutoReq:	no
 
