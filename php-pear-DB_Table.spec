@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - automate table creation
-Summary(pl):	%{_pearname} - automatyzacja tworzenia tabel
+Summary(pl.UTF-8):   %{_pearname} - automatyzacja tworzenia tabel
 Name:		php-pear-%{_pearname}
 Version:	1.4.0
 Release:	1
@@ -34,18 +34,18 @@ match the table column definitions.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Klasa zbudowana na PEAR DB do wyabstrahowania typów danych i
-zautomatyzowania tworzenia tabel, sprawdzania poprawno¶ci danych,
-wstawiania, modyfikowania, usuwania i wybierania rekordów; ³±czy je
+%description -l pl.UTF-8
+Klasa zbudowana na PEAR DB do wyabstrahowania typÃ³w danych i
+zautomatyzowania tworzenia tabel, sprawdzania poprawnoÅ›ci danych,
+wstawiania, modyfikowania, usuwania i wybierania rekordÃ³w; Å‚Ä…czy je
 z PEAR HTML_QuickForm w celu automatycznego generowania formularzy
-wej¶ciowych pasuj±cych do definicji kolumn tabel.
+wejÅ›ciowych pasujÄ…cych do definicji kolumn tabel.
 
 Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl):	Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{version}-%{release}
 AutoReq:	no
@@ -54,7 +54,7 @@ AutoProv:	no
 %description tests
 Tests for PEAR::%{_pearname}.
 
-%description tests -l pl
+%description tests -l pl.UTF-8
 Testy dla PEAR::%{_pearname}.
 
 
