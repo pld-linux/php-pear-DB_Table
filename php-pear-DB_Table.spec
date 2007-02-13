@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - automate table creation
-Summary(pl.UTF-8):   %{_pearname} - automatyzacja tworzenia tabel
+Summary(pl.UTF-8):	%{_pearname} - automatyzacja tworzenia tabel
 Name:		php-pear-%{_pearname}
 Version:	1.4.0
 Release:	1
@@ -45,7 +45,7 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{version}-%{release}
 AutoReq:	no
