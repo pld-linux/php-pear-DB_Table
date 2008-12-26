@@ -7,12 +7,12 @@
 Summary:	%{_pearname} - automate table creation
 Summary(pl.UTF-8):	%{_pearname} - automatyzacja tworzenia tabel
 Name:		php-pear-%{_pearname}
-Version:	1.5.5
+Version:	1.5.6
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	348b1311ad2ddbebca45c6d1e4c996a2
+# Source0-md5:	00f3cbd725ce1080e85aa8cb59f6534c
 URL:		http://pear.php.net/package/DB_Table/
 BuildRequires:	php-pear-PEAR >= 1:1.6.1
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
