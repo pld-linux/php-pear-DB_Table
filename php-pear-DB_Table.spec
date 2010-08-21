@@ -3,12 +3,11 @@
 %define		_subclass	Table
 %define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
-
 Summary:	%{_pearname} - automate table creation
 Summary(pl.UTF-8):	%{_pearname} - automatyzacja tworzenia tabel
 Name:		php-pear-%{_pearname}
 Version:	1.5.6
-Release:	1
+Release:	2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -18,8 +17,9 @@ BuildRequires:	php-pear-PEAR >= 1:1.6.1
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	php-pear
-Requires:	php-pear-DB
-Requires:	php-pear-Date
+Suggests:	php-pear-DB
+Suggests:	php-pear-HTML_QuickForm
+Suggests:	php-pear-MDB2
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -37,8 +37,8 @@ In PEAR status of this package is: %{_status}.
 %description -l pl.UTF-8
 Klasa zbudowana na PEAR DB do wyabstrahowania typów danych i
 zautomatyzowania tworzenia tabel, sprawdzania poprawności danych,
-wstawiania, modyfikowania, usuwania i wybierania rekordów; łączy je
-z PEAR HTML_QuickForm w celu automatycznego generowania formularzy
+wstawiania, modyfikowania, usuwania i wybierania rekordów; łączy je z
+PEAR HTML_QuickForm w celu automatycznego generowania formularzy
 wejściowych pasujących do definicji kolumn tabel.
 
 Ta klasa ma w PEAR status: %{_status}.
@@ -48,15 +48,14 @@ Summary:	Tests for PEAR::%{_pearname}
 Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{version}-%{release}
-AutoReq:	no
 AutoProv:	no
+AutoReq:	no
 
 %description tests
 Tests for PEAR::%{_pearname}.
 
 %description tests -l pl.UTF-8
 Testy dla PEAR::%{_pearname}.
-
 
 %prep
 %pear_package_setup
